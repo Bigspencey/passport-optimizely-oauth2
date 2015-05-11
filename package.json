@@ -12,5 +12,5 @@
     "passport-oauth": ">= 0.1.0"
   },
   "engines": { "node": ">= 0.4.0" },
-  "keywords": ["passport", "optimizely", "auth", "authn", "authentication", "identity"]
+  "keywords": ["passport", "optimizely", "auth", "authentication"]
 }

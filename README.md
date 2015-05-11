@@ -1,11 +1,11 @@
-# Passport-23AndMe
+# passport-optimizely-oauth2
 
 [Passport](https://github.com/jaredhanson/passport) strategy for authenticating
-with [23AndMe's Personal Genome API](https://api.23andme.com) using the OAuth 2.0 API.
+with [Optimizely's Rest API](https://www.optimizely.com/) using the OAuth 2.0 API.
 
 ## Installation
 
-    $ npm install passport-23andme
+    $ npm install passport-optimizely-oauth2
 
 ## Usage
 
@@ -16,43 +16,20 @@ OAuth tokens.  The strategy requires a `verify` callback, which accepts these
 credentials and calls `done` providing a user, as well as `options` specifying a
 consumer key, consumer secret, and callback URL.
 
-    passport.use(new TwentyThreeAndMeStrategy({
-        consumerKey: TWENTYTHREEANDME_CONSUMER_KEY,
-        consumerSecret: TWENTYTHREEANDME_CONSUMER_SECRET,
-        callbackURL: "http://127.0.0.1:3000/auth/23andme/callback",
-        scope: "basic names haplogroups"
-      },
-      function(token, tokenSecret, profile, done) {
-        User.findOrCreate({ userId: profile.id }, function (err, user) {
-          return done(err, user);
-        });
-      }
-    ));
+<!-- Place example here!!! -->
 
 #### Authenticate Requests
 
-Use `passport.authenticate()`, specifying the `'23andme'` strategy, to
+Use `passport.authenticate()`, specifying the `'Optimizely'` strategy, to
 authenticate requests.
 
 For example, as route middleware in an [Express](http://expressjs.com/)
 application:
 
-    app.get('/auth/23andme',
-      passport.authenticate('23andme'),
-      function(req, res){
-        // The request will be redirected to 23AndMe Personal Genome API for authentication, so this
-        // function will not be called.
-      });
-
-    app.get('/auth/23andme/callback',
-      passport.authenticate('23andme', { failureRedirect: '/login' }),
-      function(req, res) {
-        // Successful authentication, redirect home.
-        res.redirect('/');
-      });
+<!-- Place example here!!! -->
 
 ## Credits
-  - [Michael Owens](https://github.com/mowens)
+  - [Spencer Smitherman](https://github.com/Bigspencey)
 
 ## Thanks
   - [Jared Hanson](https://github.com/jaredhanson)
