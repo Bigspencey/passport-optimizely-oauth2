@@ -1,0 +1,16 @@
+{
+  "name": "passport-optimizely-oauth2",
+  "version": "0.1.1",
+  "description": "Optimizely authentication strategy for Passport.",
+  "author": "Spencer Smitherman <spencer@optimizely.com> (https://www.optimizely.com/)",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/Bigspencey/passport-optimizely-oauth2.git"
+  },
+  "main": "./lib/passport-optimizely-oauth2",
+  "dependencies": {
+    "passport-oauth": ">= 0.1.0"
+  },
+  "engines": { "node": ">= 0.4.0" },
+  "keywords": ["passport", "optimizely", "auth", "authn", "authentication", "identity"]
+}
