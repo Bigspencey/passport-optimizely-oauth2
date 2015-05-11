@@ -11,11 +11,6 @@ with [Optimizely's Rest API](https://www.optimizely.com/) using the OAuth 2.0 AP
 
 #### Configure Strategy
 
-The 23AndMe Personal Genome API authentication strategy authenticates users using a 23AndMe Personal Genome API account and
-OAuth tokens.  The strategy requires a `verify` callback, which accepts these
-credentials and calls `done` providing a user, as well as `options` specifying a
-consumer key, consumer secret, and callback URL.
-
 <!-- Place example here!!! -->
 
 #### Authenticate Requests
